@@ -1,0 +1,78 @@
+div {
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.top {
+    /* margin-top: 5px; */
+}
+
+.top a {
+    padding: 10px 20px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+.top a:hover {
+    background: #7777;
+}
+
+body {
+    /*
+    position: relative;
+    left: auto;
+    right: auto;
+    */
+    margin: auto;
+    width: 90%;
+
+    color: #777;
+   /* line-height: 1.8;*/
+    font-family: "Lato", sans-serif;
+}
+
+.bgimg {
+    opacity: 0.6;
+    background-image: url(images/bgimg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.row {
+    display: flex;
+}
+
+.main item {
+    border: 0px red solid;
+    flex: 1 1 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+item button {
+
+}
+
+.floatingButton {
+    position: absolute;
+    left: 15%;
+    bottom: 35%;
+
+    background: #fffc;
+    border-radius: 8px;
+    color: #000c;
+    margin: auto;
+    font-size: x-large;
+    padding: 8px 12px;
+}
