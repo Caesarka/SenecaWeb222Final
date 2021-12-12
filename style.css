@@ -1,7 +1,13 @@
 div {
     margin: 0 auto;
     background: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+}
+
+.main {
+    padding: 20px;
+    margin-top: 15px;
+    opacity: 0.9;
 }
 
 .top {
@@ -20,11 +26,6 @@ div {
 }
 
 body {
-    /*
-    position: relative;
-    left: auto;
-    right: auto;
-    */
     margin: auto;
     width: 90%;
 
@@ -34,15 +35,20 @@ body {
 }
 
 .bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
     opacity: 0.6;
     background-image: url(images/bgimg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
 }
 
-.main {
+.homeMain {
     display: flex;
     flex-direction: row;
 }
@@ -75,4 +81,5 @@ item button {
     margin: auto;
     font-size: x-large;
     padding: 8px 12px;
+    cursor: pointer;
 }
