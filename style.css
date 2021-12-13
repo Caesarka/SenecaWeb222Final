@@ -1,5 +1,4 @@
-div {
-    margin: 0 auto;
+.card, .top, .main {
     background: white;
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
 }
@@ -10,8 +9,16 @@ div {
     opacity: 0.9;
 }
 
+.conditionalShow {
+    display: none;
+}
+
+.conditionalShow.show {
+    display: block;
+}
+
 .top {
-    /* margin-top: 5px; */
+    margin: 0 auto;
 }
 
 .top a {
@@ -30,12 +37,11 @@ body {
     width: 90%;
 
     color: #777;
-   /* line-height: 1.8;*/
     font-family: "Lato", sans-serif;
 }
 
 .bgimg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     opacity: 0.6;
@@ -57,24 +63,23 @@ body {
     display: flex;
 }
 
+.col {
+    flex: 1 1 0;
+    align-content: right;
+}
+
 .main item {
     border: 0px red solid;
     flex: 1 1 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-item button {
-
 }
 
 .floatingButton {
     position: absolute;
     left: 15%;
     bottom: 35%;
-
     background: #fffc;
     border-radius: 8px;
     color: #000c;
