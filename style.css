@@ -19,6 +19,9 @@
 
 .top {
     margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .top a {
@@ -35,9 +38,10 @@
 body {
     margin: auto;
     width: 90%;
-
+    padding-bottom: 25px;
+    padding-top: 30px;
     color: #777;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif;    
 }
 
 .bgimg {
@@ -65,7 +69,26 @@ body {
 
 .col {
     flex: 1 1 0;
-    align-content: right;
+}
+
+.col-03 {
+    flex: .3 .3 0;
+}
+
+.col-splitter {
+    border: solid #7775 .5px;
+    flex: 0 0 0px;
+}
+.gray {
+    color: #7777;
+}
+.right {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.left {
+    margin-left: 10px;
 }
 
 .main item {

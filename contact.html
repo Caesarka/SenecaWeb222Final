@@ -15,7 +15,8 @@ Date   : Dec 13, 2021
         <title>Contact</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+        <script src="main.js"></script>
+        </head>
 <body>
     <div class="bgimg"></div>
     <div class="top">
@@ -26,23 +27,23 @@ Date   : Dec 13, 2021
     </div>
     <div class="main">
         <form action="https://formspree.io/f/xvoloklz" method="post">
-            <label>
                 <input type="text" placeholder="Name" required name="Name"><br><br>
                 <input type="email" placeholder="Email" required name="Email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"><br><br>
                 <input type="address" placeholder="Address" required name="Address"><br><br>
                 <input type="text" placeholder="City" required name="City"><br><br>
                 <input type="text" placeholder="Postal code" required name="Postal code" pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$"><br><br>
-            </label>
+           
               <input type="radio" id="question" name="radioAnswer" required onclick="radioClickQ()">
               <label for="question">Question</label><br>
               <input type="radio" id="comment" name="radioAnswer" required onclick="radioClickC()">
               <label for="comment">Comment</label><br>  
               <input type="radio" id="hiring" name="radioAnswer" required onclick="radioClickH()">
               <label for="hiring">Hiring</label><br>
-              <input type="number" min='1' step='.01' placeholder="Hourly rate" name="Rate" class="conditionalShow"><br>
-              <textarea rows="5" cols="50" name="Message" class="conditionalShow">Enter text here...</textarea>
+              <br>
+              <input type="number" min='1' step='.01' placeholder="Hourly rate" name="Rate" class="conditionalShow">
+              <textarea rows="5" cols="50" name="Message" class="conditionalShow" placeholder="Enter text here..."></textarea>
+              <br><br>
               <button type="submit">Send</button>  
         </form>
-        <script src="main.js"></script>
     </div>
 </body>

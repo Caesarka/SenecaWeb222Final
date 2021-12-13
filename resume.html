@@ -16,6 +16,7 @@ Date   : Dec 13, 2021
         <title>Resume</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="main.js"></script>
     </head>
     <body>
         <div class="bgimg"></div>
@@ -37,12 +38,12 @@ Date   : Dec 13, 2021
                         <tr>
                             <td><p>AGE</p></td>
                             <td></td>
-                            <td>34</td>
+                            <td id="age">34</td>
                         </tr>
                         <tr>
                             <td><p>EMAIL</p></td>
                             <td></td>
-                            <td>ygusarova@myseneca.ca</td>
+                            <td><a target="_blank" href='mailto:ygusarova@myseneca.ca'>ygusarova@myseneca.ca</a></td>
                         </tr>
                         <tr>
                             <td><p>LANGUAGE</p></td>
@@ -56,22 +57,24 @@ Date   : Dec 13, 2021
         <div class="main">
             <h3>EDUCATION</h3>
             <div class="row">
-                <div class="col">
-                    <p>2005 - 2011</p>
+                <div class="col-03 right">
                     <h4>Master's Degree</h4>
+                    <p>2005 - 2011</p>
                 </div>
-                <div class="col">
-                    <p>Saint Petersburg State University of Aerospace Instrumentation</p>
+                <div class="col-splitter"></div>
+                <div class="col left">
+                    <h4>Saint Petersburg State University of Aerospace Instrumentation</h4>
                     <p>Laser devices and systems</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
-                    <p>2020 - 2022(expected)</p>
+                <div class="col-03 right">
                     <h4>Bachelor's Degree</h4>
+                    <p>2020 - 2023 <span class="gray">(expected)</span></p>
                 </div>
-                <div class="col">
-                    <p>Seneca College</p>
+                <div class="col-splitter"></div>
+                <div class="col left">
+                    <h4>Seneca College</h4>
                     <p>Computer Programming and Analisys</p>
                 </div>
             </div>
@@ -79,7 +82,7 @@ Date   : Dec 13, 2021
         <div class="main">
             <h3>REFLECTION</h3>
             <div class="row"></div>
-            <p>The WEB222 course provided a broad understanding of web development. The parallel study of html, javascript and css made it possible to see the result of my work immediately and try different concepts of web development at the same time. Unlike OOP, where it is often quite difficult to at least identify the problem, the web is more high-level and easier for a beginner to "understand". Debugging allows me to receive feedback not only in the development environment window (for example, in the VS code), but also in the browser through development tools. Through the flexboxdefense game, I learned the concept of a flexbox model for distributing space between elements in an interface. I can't imagine games where one could study as clearly, for example, C ++ constructors. I tried working with different positioning objects (static, relative, fixed, absolute, sticky) and css selectors as well.</p>
+            <p>The WEB222 course provided a broad understanding of web development. The parallel study of html, javascript and css made it possible to see the result of my work immediately and try different concepts of web development at the same time. Unlike OOP, where it is often quite difficult to at least identify the problem, the web is more high-level and easier for a beginner to "understand". Debugging allows me to receive feedback not only in the development environment window (for example, in the VS code), but also in the browser through development tools. Through the <a target="_blank" href='http://www.flexboxdefense.com/'>flexboxdefense game</a>, I learned the concept of a flexbox model for distributing space between elements in an interface. I can't imagine games where one could study as clearly, for example, C ++ constructors. I tried working with different positioning objects (static, relative, fixed, absolute, sticky) and css selectors as well.</p>
             <p>Web development is an integral part of full stack development. This semester I have been writing C++ code for a simple Oracle database interface. The results of queries and menus were displayed in a black output window. It looked pretty dull. I believe that in the next courses the black screen will be replaced by a more pleasant web interface, and thus, all three technologies complementing each other, will allow me to create an almost complete final product.</p>
         </div>
     </body>
